@@ -1,3 +1,14 @@
 spring:
-  application:
-    name: expense-guard-api
+  datasource:
+    url: jdbc:postgresql://localhost:5432/expenseguard
+    username: expenseguard
+    password: ${DB_PASSWORD:devpassword}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+server:
+  port: 8080
