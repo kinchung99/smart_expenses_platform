@@ -1,4 +1,4 @@
-package com.expenseguard.expense_guard_api;
+package com.expenseguard;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

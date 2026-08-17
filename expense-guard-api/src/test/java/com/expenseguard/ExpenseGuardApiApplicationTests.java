@@ -1,4 +1,4 @@
-package com.expenseguard.expense_guard_api;
+package com.expenseguard;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
