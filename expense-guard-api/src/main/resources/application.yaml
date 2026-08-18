@@ -6,9 +6,18 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+    open-in-view: false
     show-sql: true
     properties:
       hibernate:
         format_sql: true
 server:
   port: 8080
+
+app:
+  jwt:
+    # Override in real environments. Must be at least 32 bytes for HS256.
+    secret: ${JWT_SECRET:dev-only-secret-change-me-in-production-0123456789}
+    expiration-ms: ${JWT_EXPIRATION_MS:86400000} # 24h
+  cors:
+    allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:3000,http://localhost:5173}

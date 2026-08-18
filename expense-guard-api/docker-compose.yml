@@ -1,5 +1,4 @@
-# docker-compose.yml (project root)
-version: "3.9"
+# docker-compose.yml (expense-guard-api)
 services:
   postgres:
     image: postgres:16-alpine
